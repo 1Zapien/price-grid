@@ -22,7 +22,7 @@ main {
   margin: auto;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   main {
     padding-top: 0rem;
     max-width: 750px;
@@ -131,7 +131,7 @@ main {
   padding: .2rem;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   .card__monthly, .card__benefits, .card__pitch {
     padding: 2rem;
   }
