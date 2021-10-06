@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+body {
+  background-color: #e5eff5;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: 'Karla', sans-serif;
+}
+
+h1, h2 {
+  padding: 0rem;
+  margin: 0rem;
+}
+
+main {
+  padding-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: " pitch pitch" "monthly monthly" "benefits benefits";
+  max-width: 90%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    padding-top: 0rem;
+    max-width: 750px;
+        grid-template-areas: " pitch pitch" "monthly benefits";
+  }
+}
+
+.card__pitch {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: pitch;
+  background-color: white;
+  padding: 0rem 1.5rem 1rem 1.5rem;
+  line-height: 1.75;
+  padding: 1rem;
+}
+
+.card__pitch h1 {
+  color: #2ab2af;
+  margin-bottom: 1rem;
+}
+
+.card__pitch b {
+  color: #c0df34;
+}
+
+.card__pitch p {
+  color: #98a6bd;
+}
+
+.card__monthly {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: monthly;
+  background-color: #2ab2af;
+  color: white;
+  padding: 1.5rem;
+}
+
+.card__monthly h2 {
+  padding: 1rem 0rem;
+}
+
+.card__monthly .card__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__monthly .card__price b {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 35px;
+}
+
+.card__monthly .card__price p {
+  padding-left: .5rem;
+  color: #e5eff5;
+}
+
+.card__monthly button {
+  width: 90%;
+  background-color: #c0df34;
+  border: none;
+  color: white;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  -webkit-box-shadow: 1px 2.8px 2.2px rgba(0, 0, 0, 0.05), 2px 8.7px 5.3px rgba(0, 0, 0, 0.08), 3px 12.5px 10px rgba(0, 0, 0, 0.13);
+          box-shadow: 1px 2.8px 2.2px rgba(0, 0, 0, 0.05), 2px 8.7px 5.3px rgba(0, 0, 0, 0.08), 3px 12.5px 10px rgba(0, 0, 0, 0.13);
+}
+
+.card__monthly button:hover {
+  cursor: pointer;
+  background-color: #ffeF20;
+}
+
+.card__benefits {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: benefits;
+  background-color: #4abebd;
+  padding: 1rem;
+}
+
+.card__benefits h2 {
+  color: white;
+  padding: 1rem 0rem;
+}
+
+.card__benefits ul {
+  margin: 0rem;
+  padding: 0rem;
+  color: #e5eff5;
+  list-style-type: none;
+}
+
+.card__benefits li {
+  padding: .2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .card__monthly, .card__benefits, .card__pitch {
+    padding: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
